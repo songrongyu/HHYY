@@ -3,9 +3,21 @@ ul,li{
 }
 li{
     width: 40%;
-    font-size: 30px;
+    font-size: 14px;
     float: left;
-    margin: 5%;
-    height: 100px;
-    background: rgb(25, 214, 34);
+    margin: 3%;
+    height: 250px;
+    /* background: rgb(25, 214, 34); */
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+span{
+    color: red;
+    font-size: 12px;
+    font-weight: bolder;
+}
+#aa{
+    text-align: center;
 }

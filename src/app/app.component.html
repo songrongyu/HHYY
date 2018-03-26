@@ -3,10 +3,10 @@
 
 <div style="text-align:center">
   <!--  插值表达式  -->
-  <h1>
+  <!-- <h1>
     {{ title }}!
   </h1>
-  <img src="{{imgUrl}}" alt="">
+  <img src="{{imgUrl}}" alt=""> -->
   <!-- 属性绑定 -->
   <!-- <p [id]='id' [innerHTML]="title"></p> -->
 
@@ -62,9 +62,13 @@
 	</li>
 </ul> -->
 
-<app-header [listart]="items"> </app-header>
-<app-body [list]="items" ></app-body>
-</div> 
+<!-- <app-header [listart]="items"> </app-header>
+<app-body [list]="items" ></app-body> -->
+
+<!-- <a routerLinnk="/todolist">todolist</a>
+<a routerLinnk="/goodslist">goodslist</a>
+<router-outlet></router-outlet> -->
+<!-- </div>  -->
 
 <!-- 组件 -->
 <!-- <app-todolist></app-todolist> -->
@@ -72,7 +76,7 @@
 <!-- 组件交互 -->
 <!-- 父组件到子组件 -->
 <!-- <app-goodslist [list]="arr1"></app-goodslist> -->
-<!-- <app-goodslist [list]="goodslist"></app-goodslist> -->
+<app-goodslist [list]="goodslist"></app-goodslist>
 <!-- 父组件到子组件 -->
 <!-- <div class="box">
   <h2>你同意五一放七天假吗</h2>
@@ -80,6 +84,8 @@
   <app-voter *ngFor="let voter of voters" [name]="voter" (onVoted)="onVoted($event)">
   </app-voter>
 </div> -->
+</div>
+
   
 
 
