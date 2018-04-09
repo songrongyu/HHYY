@@ -1,0 +1,115 @@
+<ion-header no-border>
+  <ion-navbar color="yel">
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title style="text-align:center;"><img src="assets/imgs/logo_03.png" style="width:100px;height:30px;"></ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <div class="aa">
+      <ion-slides autoplay="2000" loop="true" pager="true" paginationType="bullets">
+          <ion-slide>
+            <img src="assets/imgs/nav_02.png" style="width:1400px;"> 
+          </ion-slide>
+          <ion-slide>
+            <img src="assets/imgs/nav_02.png" style="width:1400px;"> 
+          </ion-slide>
+          <ion-slide>
+            <img src="assets/imgs/nav_02.png" style="width:1400px;"> 
+          </ion-slide>
+      </ion-slides>
+  </div>
+  <div padding class="bb">
+    <ion-segment [(ngModel)]="relationship" color="yel">
+        <ion-segment-button value="information"  style="font-size:18px;">
+           找信息
+          </ion-segment-button>
+          <ion-segment-button value="server" style="font-size:18px;">
+            找服务
+          </ion-segment-button>
+    </ion-segment>
+  </div>
+  <div [ngSwitch]="relationship">
+    <ion-list *ngSwitchCase="'information'">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-3 ><img src="assets/imgs/1_06.png" style="width:30px; height:30px;"><br/>资产包转让</ion-col>
+          <ion-col col-3><img src="assets/imgs/2_08.png" style="width:30px; height:30px;"><br/>债权转让 </ion-col>
+          <ion-col col-3><img src="assets/imgs/3_10.png" style="width:30px; height:30px;"><br>固产转让 </ion-col>
+          <ion-col col-3><img src="assets/imgs/7_13.png" style="width:30px; height:30px;"><br>商业保理  </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-3 ><img src="assets/imgs/4_20.png" style="width:30px; height:30px;"><br/>典当担保</ion-col>
+            <ion-col col-3><img src="assets/imgs/5_22.png" style="width:30px; height:30px;"><br/>融资借贷 </ion-col>
+            <ion-col col-3><img src="assets/imgs/6_24.png" style="width:30px; height:30px;"><br>悬赏信息 </ion-col>
+            <ion-col col-3><img src="assets/imgs/8_26.png" style="width:30px; height:30px;"><br>尽职调查  </ion-col>
+          </ion-row>
+      </ion-grid>
+      <div padding>
+          <div style="float:left">
+            <img src="assets/imgs/00_03.png" style="width:45px;height:45px;">
+          </div>
+          <div style="float:left; margin-top:10px;">  
+            <h1>优质信息</h1>
+          </div><br/>
+         <p style="font-size:16px; margin-left:-150px;">资产包转让<span>--FB001</span></p>
+        <ion-list>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="assets/imgs/9_32.png" style="width:70px;height:90px;">
+            </ion-avatar>
+            <p><span>地区：</span>北京</p>
+            <p><span>来源：</span>银行</p>
+            <p><span>资产包类型：</span>抵押</p>
+          </ion-item>
+        </ion-list>
+        <ion-list>
+            <ion-item>
+              <ion-avatar item-start>
+                <img src="assets/imgs/06_03.png" style="width:60px;height:70px;">
+              </ion-avatar>
+              <p><span>地区：</span>北京</p>
+              <p><span>来源：</span>银行</p>
+              <p><span>资产包类型：</span>抵押</p>
+            </ion-item>
+          </ion-list>
+      </div>
+    </ion-list>
+    <ion-list *ngSwitchCase="'server'">
+        <ion-grid>
+            <ion-row>
+                <ion-col col-3 ><img src="assets/imgs/1_06.png" style="width:30px; height:30px;"><br/>资产包转让</ion-col>
+                <ion-col col-3><img src="assets/imgs/2_08.png" style="width:30px; height:30px;"><br/>债权转让 </ion-col>
+                <ion-col col-3><img src="assets/imgs/3_10.png" style="width:30px; height:30px;"><br>固产转让 </ion-col>
+                <ion-col col-3><img src="assets/imgs/7_13.png" style="width:30px; height:30px;"><br>商业保理  </ion-col>
+              </ion-row>
+          <ion-row>
+            <ion-col col-3 ><img src="assets/imgs/4_20.png" style="width:30px; height:30px;"><br/>典当担保</ion-col>
+            <ion-col col-3><img src="assets/imgs/5_22.png" style="width:30px; height:30px;"><br/>融资借贷 </ion-col>
+            <ion-col col-3><img src="assets/imgs/6_24.png" style="width:30px; height:30px;"><br>悬赏信息 </ion-col>
+            <ion-col col-3><img src="assets/imgs/8_26.png" style="width:30px; height:30px;"><br>尽职调查  </ion-col>
+          </ion-row>
+        </ion-grid>
+        <div padding>
+            <div style="float:left">
+              <img src="assets/imgs/00_03.png" style="width:45px;height:45px;">
+            </div>
+            <div style="float:left; margin-top:10px;">  
+              <h1>优质信息</h1>
+            </div><br/>
+           <p style="font-size:16px; margin-left:-150px;">资产包转让<span>--FB001</span></p>
+          <ion-list>
+            <ion-item>
+              <ion-avatar item-start>
+                <img src="assets/imgs/9_32.png" style="width:70px;height:90px;">
+              </ion-avatar>
+              <p><span>地区：</span>北京</p>
+              <p><span>来源：</span>银行</p>
+              <p><span>资产包类型：</span>抵押</p>
+            </ion-item>
+          </ion-list>
+        </div>
+    </ion-list>
+  </div>
+</ion-content>
